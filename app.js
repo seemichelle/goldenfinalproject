@@ -5,35 +5,35 @@ allMouseoverfront.on('mouseover', function(e) {
 	const currentButton = $(e.target);
 
 	if (currentButton.is('.manhattan')) {
-		$('.frontpage').css({
+		$('.frontpage-background').css({
 			'background-image': 'url(assets/manhattan.jpg)',
 			'background-size': '110% 110%',
 		})
 	}
 
 	if (currentButton.is('.brooklyn')) {
-		$('.frontpage').css({
+		$('.frontpage-background').css({
 			'background-image': 'url(assets/brooklyn.jpg)',
 			'background-size': '110% 110%',
 		})
 	}
 
 	if (currentButton.is('.queens')) {
-		$('.frontpage').css({
+		$('.frontpage-background').css({
 			'background-image': 'url(assets/queens.jpg)',
 			'background-size': '110% 110%',
 		})
 	}
 
 	if (currentButton.is('.bronx')) {
-		$('.frontpage').css({
+		$('.frontpage-background').css({
 			'background-image': 'url(assets/bronx.jpg)',
 			'background-size': '110% 110%',
 		})
 	}
 
 	if (currentButton.is('.statenisland')) {
-		$('.frontpage').css({
+		$('.frontpage-background').css({
 			'background-image': 'url(assets/statenisland.jpg)',
 			'background-size': '110% 110%',
 		})
@@ -43,7 +43,7 @@ allMouseoverfront.on('mouseover', function(e) {
 
 
 allMouseoverfront.on('mouseout', function(e) {
-	$('.frontpage').css({
+	$('.frontpage-background').css({
 		'background-image': 'url(http://pixel.nymag.com/imgs/daily/intelligencer/2015/12/04/birds/04-new-years-party2.w1200.h630.jpg)',
 		'background-size': '100% 100%'
 	})
@@ -94,8 +94,11 @@ lookup.on('click', function() {
     	dataWrapper.empty();
     	for (let i = 0; i < centers.length; i++) {
     		const url = getGoogleURL(centers[i]);
-    		dataWrapper.append(`<div class="data-item">
-    			<a target="_blank" href="${url}">${centers[i].title}</a>
+    		dataWrapper.append(
+    		`<div class="data-item">
+    			<span class = "centername">
+    				<a target="_blank" href="${url}">${centers[i].title} (map)</a><br />
+    			</span>
     			<span class="address">
     				${centers[i].address}
     			</span>

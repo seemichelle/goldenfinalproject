@@ -1,11 +1,6 @@
-.map {
-	height: 400px;
-	width: 100%;
-}
-
 body {
 	background-color: rgba(23, 1, 53, 1);
-
+	width:100%;
 }
 
 .website-title {
@@ -38,7 +33,18 @@ body {
     align-items: flex-end;
 }
 
+.frontpage-background {
+	background-image: url("http://pixel.nymag.com/imgs/daily/intelligencer/2015/12/04/birds/04-new-years-party2.w1200.h630.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-position: center;
+    opacity: 0.7;
+	transition: all .5s;
+    background-size: 100% 100%;
+}
+
 .frontpage {
+	width: 80%;
 	color: #c1a138;
 	font-size: 75px;
 	text-decoration: none;
@@ -48,13 +54,6 @@ body {
     padding-top: 27px;
     font-family: "Fascinate Inline";
 	font-weight: 900;
-	transition: all .5s;
-	background-image: url("http://pixel.nymag.com/imgs/daily/intelligencer/2015/12/04/birds/04-new-years-party2.w1200.h630.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-    background-position: center;
-    opacity: 0.7;
-    background-size: 100% 100%;
 }
 
 .mouseover-front {
@@ -62,24 +61,85 @@ body {
 	color: #fff2a3;
 	font-size: 75px;
 	text-decoration: none;
-	line-height: 30px;
-	padding: 20px;
+	line-height: 120px;
+	padding: 10px;
 	display: inline-block;
-    padding-top: 27px;
+    padding-top: 20px;
     font-family: "Fascinate Inline";
 	font-weight: 900;
 }
 
 .mouseover-front:hover {
+	line-height: 125px;
+	padding: 5px;
+	display: inline-block;
+    padding-top: 3px;
 	color: #ffffff;
-	font-size: 100px;
+	font-size: 95px;
 	text-shadow: 15px 15px #000000;
 }
 
-.data-item {
+.form-wrapper {
+	width: 100%;
+	padding-top: 18px;
+}
 
+.input-group {
+    margin: auto;
+    width: 50%;
+}
+/*
+.data {
+	display: table;
+}*/
+
+.data-item {
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 30px;
+	padding: 10px;
+    padding-top: 20px;
+    font-family: "IBM Plex Sans";
+	margin: 10px 0;
+}
+
+.centername a {
+	color: #c1a138;
+	text-decoration: none;
 }
 
 .address {
 	color: white;
+}
+
+.form-control {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: "IBM Plex Sans";
+    color: #rgba(23, 1, 53, 1);
+    background-color: #dfd2f7;
+    display: inline-block;
+}
+
+.input-group-append {
+	display: inline-block;
+}
+
+.btn-primary {
+    width: 250px;
+    padding: 15px 20px;
+    margin: auto 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-color: #d1bbf7;
+	font-size: 17px;  
+	font-family: "IBM Plex Sans";
+	background-color: #d1bbf7;
+	color: #rgba(23, 1, 53, 1);
+	vertical-align: center;
 }
