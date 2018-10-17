@@ -1,0 +1,85 @@
+.map {
+	height: 400px;
+	width: 100%;
+}
+
+body {
+	background-color: rgba(23, 1, 53, 1);
+
+}
+
+.website-title {
+	color: #d4af37;
+    font-family: 'Fugaz One', serif;
+    font-weight: 900;
+    font-size: 65px;
+    margin: 20px 0 0 0;
+}
+
+.nav-linkbold {
+	color: #c1a138;
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 30px;
+	padding: 20px;
+	display: inline-block;
+    padding-top: 27px;
+    font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 900;
+}
+
+.top-nav {
+	justify-content: space-between;
+	display: flex;
+}
+
+.main-nav-links {
+	display: flex;
+    align-items: flex-end;
+}
+
+.frontpage {
+	color: #c1a138;
+	font-size: 75px;
+	text-decoration: none;
+	line-height: 30px;
+	padding: 20px;
+	display: inline-block;
+    padding-top: 27px;
+    font-family: "Fascinate Inline";
+	font-weight: 900;
+	transition: all .5s;
+	background-image: url("http://pixel.nymag.com/imgs/daily/intelligencer/2015/12/04/birds/04-new-years-party2.w1200.h630.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+    background-position: center;
+    opacity: 0.7;
+    background-size: 100% 100%;
+}
+
+.mouseover-front {
+	transition: all 0.5s;
+	color: #fff2a3;
+	font-size: 75px;
+	text-decoration: none;
+	line-height: 30px;
+	padding: 20px;
+	display: inline-block;
+    padding-top: 27px;
+    font-family: "Fascinate Inline";
+	font-weight: 900;
+}
+
+.mouseover-front:hover {
+	color: #ffffff;
+	font-size: 100px;
+	text-shadow: 15px 15px #000000;
+}
+
+.data-item {
+
+}
+
+.address {
+	color: white;
+}
